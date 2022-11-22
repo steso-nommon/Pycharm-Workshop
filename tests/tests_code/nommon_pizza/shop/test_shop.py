@@ -47,7 +47,7 @@ def test_adjust_salaries(salary_adjust, nommon_shop):
         results file with the example data processed.
     STEPS:
         1. First step
-        2. Final step
+        2. Final stepuibi
     """
 
     return_code = nommon_shop.adjust_salaries(salary_adjust)
