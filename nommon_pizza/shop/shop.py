@@ -35,7 +35,7 @@ class Shop:
         self.pizzas[pizza] = price
 
     def adjust_salaries(self, salary_adjust_percentage):
-        for employee in self.employees:
+        for employee in self.employees.values():
             employee.salary *= salary_adjust_percentage
 
         self.product_owner.salary /= self.product_owner.salary

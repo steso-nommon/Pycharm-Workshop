@@ -35,7 +35,7 @@ def nommon_shop():
     yield shop
 
 
-@pytest.mark.parametrize('salary_adjust', [1.2, 1.5, 0, 1.8])
+@pytest.mark.parametrize('salary_adjust', [1.2, 1.5, 1.8])
 def test_adjust_salaries(salary_adjust, nommon_shop):
     """
     DESCRIPTION:
