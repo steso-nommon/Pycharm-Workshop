@@ -7,8 +7,8 @@
 __author__ = 'steso'
 __copyright__ = '(c) Nommon 2022'
 
-from nommon_pizza.employees.employee import Employee
-from nommon_pizza.employees.product_owner import ProductOwner
+from nommon_pizza.people.employee import Employee
+from nommon_pizza.people.product_owner import ProductOwner
 
 
 class Shop:
