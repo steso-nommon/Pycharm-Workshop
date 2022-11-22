@@ -1,0 +1,23 @@
+FROM nommon-kineo-py3:latest
+
+LABEL mantainer="nommon@nommon.com"
+LABEL author="steso"
+LABEL version="1.0"
+
+RUN apt install curl mlocate default-jdk -y # install java
+RUN wget https://dlcdn.apache.org/spark/spark-3.3.1/spark-3.3.1-bin-hadoop3.tgz
+RUN tar xvf spark-3.3.1-bin-hadoop3.tgz --no-same-owner
+RUN mv spark-3.3.1-bin-hadoop3/ /opt/spark
+# INSTALL pyspark
+RUN pip install pyspark
+# INSTALL scala
+RUN apt-get install scala -y
+
+# SET ENV variables
+RUN echo "export SPARK_HOME=/opt/spark" >> ~/.bashrc
+RUN echo "export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64 >> ~/.bashrc"
+RUN echo "export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin:$JAVA_HOME" >> ~/.bashrc
+#RUN source ~/.bashrc
+
+# Establish Workdir
+WORKDIR /opt/shared
