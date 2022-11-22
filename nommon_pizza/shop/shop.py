@@ -33,3 +33,11 @@ class Shop:
 
     def create_pizza_design(self, pizza, price):
         self.pizzas[pizza] = price
+
+    def adjust_salaries(self, salary_adjust_percentage):
+        for employee in self.employees:
+            employee.salary *= salary_adjust_percentage
+
+        self.product_owner.salary /= self.product_owner.salary
+
+        return "OK"
