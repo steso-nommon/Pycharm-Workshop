@@ -18,4 +18,4 @@ class ProductOwner(Employee):
         self.price = price
 
     def design_pizza(self, shop):
-        return shop.add_pizza(self.pizza, self.price)
+        return shop.create_pizza_design(self.pizza, self.price)
