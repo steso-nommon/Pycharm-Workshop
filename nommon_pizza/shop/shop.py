@@ -29,5 +29,5 @@ class Shop:
 
         return Shop(employees, product_owner)
 
-    def add_pizza(self, pizza, price):
+    def create_pizza_design(self, pizza, price):
         self.pizzas[pizza] = price
