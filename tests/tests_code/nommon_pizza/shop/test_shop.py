@@ -55,3 +55,20 @@ def test_adjust_salaries(salary_adjust, nommon_shop):
     assert return_code == "OK"
 
 
+def test_zero_division_error(nommon_shop):
+    """
+    DESCRIPTION:
+        Test description.
+    INPUT:
+        foo_configuration.cfg configuration file for foo module.
+        example_data.csv input data needed.
+    EXPECTED OUTPUT:
+        results file with the example data processed.
+    STEPS:
+        1. First step
+        2. Final step
+    """
+    salary_adjust = 0
+    # Exercise 3: verify ValueError is returned
+    with pytest.raises(ValueError):
+        nommon_shop.adjust_salaries(salary_adjust)
