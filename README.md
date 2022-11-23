@@ -1,6 +1,6 @@
 # Pycharm-Workshop
 
-## Exercise 2 - Create a Pizza
+## Exercise 2 - Debug and win
 
 In this exercise you will practise running tests within a docker and debugging code.  
 We will use the nommon-base-py3 image for running this Python3 code. 
