@@ -15,5 +15,5 @@ if __name__ == '__main__':
 
     # Exercise 1: Create a pizza
     shop.product_owner.design_pizza(shop)
-    pizza = shop.employees["Pepe"].create_pizza(shop.pizzas["Hawaiana"], "hot")
+    pizza = shop.employees["Pepe"].create_pizza(shop.pizzas["Hawaiana"], Pizza.PIZZA_STATUS_HOT)
     print(pizza)
