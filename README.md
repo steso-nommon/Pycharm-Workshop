@@ -15,6 +15,8 @@ Complete the main method to create a pizza taking into account:
   * A Product manager can design pizzas for a concrete shop.
   * An Employee can create a pizza based on a design available in a shop.
 
+Expected Output: Pizza: 10 | status=hot 
+
 _Note: Explore the python files in the nommon_pizza package. You can press Ctrl+Click in a method  
 or class to go to the source its source._
 

@@ -17,6 +17,7 @@ class Shop:
         self.employees = employees
         self.product_owner = product_owner
         self.pizzas = dict()
+        self.inventory = dict()
 
     @staticmethod
     def create_shop():
@@ -24,7 +25,8 @@ class Shop:
         juana = Employee("Juana", 22000)
         eustaquia = ProductOwner("Eustaquia", 30000, "Hawaiana", 10)
 
-        employees = [pepe, juana]
+        employees = {"Juana": juana,
+                     "Pepe": pepe}
         product_owner = eustaquia
 
         return Shop(employees, product_owner)

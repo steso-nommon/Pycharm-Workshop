@@ -1,0 +1,22 @@
+FROM nommon-base-py3:latest
+
+LABEL mantainer="nommon@nommon.com"
+LABEL author="steso"
+LABEL version="1.0"
+
+# update apt and install svn
+RUN apt-get update
+RUN apt-get install subversion -y
+
+
+RUN pip install cython
+RUN pip install pytest-runner
+
+COPY whls/* /opt/nommon/whls/
+
+RUN pip install /opt/nommon/whls/nommon_pythonlib-0.2.1-cp310-cp310-linux_x86_64.whl
+
+# Establish Workdir
+WORKDIR /opt/shared
+
+

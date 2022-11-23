@@ -14,7 +14,7 @@ class Pizza:
 
     def __init__(self, pizza_type: str, status: str):
         self.pizza_type = pizza_type
-        if status != Pizza.PIZZA_STATUS_COLD or status != Pizza.PIZZA_STATUS_HOT:
+        if status != Pizza.PIZZA_STATUS_COLD and status != Pizza.PIZZA_STATUS_HOT:
             raise ValueError("Pizza cannot be in that status.")
         self.status = status
 
