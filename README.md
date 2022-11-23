@@ -25,7 +25,10 @@ Within the docker container use the following command to run the tests:
 
 Open a Jupyter Lab inside the docker and debug the code to fix the issues.
 
-The only code that needs to be changed is the function that fives the error.
+For opening a jupyter lab, use the command `jl` within the docker terminal.  
+You ~~should~~ **MUST** use the debug tool of jupyter lab.
+
+**_The only code that needs to be changed is the function that gives the error._**
 
 
 ![](https://i0.wp.com/blog.cambro.com/wp-content/uploads/2021/10/PizzaQuiz.png?ssl=1)
