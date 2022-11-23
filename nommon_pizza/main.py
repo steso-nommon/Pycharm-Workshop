@@ -12,7 +12,5 @@ from nommon_pizza.shop.shop import Shop
 if __name__ == '__main__':
     shop = Shop.create_shop()
 
-    # Exercise 1: Create a pizza
-    shop.product_owner.design_pizza(shop)
-    pizza = shop.employees["Pepe"].create_pizza(shop.pizzas["Hawaiana"], "hot")
-    print(pizza)
+    # Exercise 1: Create a pizza_type
+
