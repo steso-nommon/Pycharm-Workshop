@@ -13,7 +13,8 @@ For creating and running a docker container:
 
 `./resources/docker/start_nommon_base_py3.sh -r`
 
-(Note: If the container already exists, use: `./resources/docker/start_nommon_base_py3.sh -d`)
+(Note: If the container already exists, use: `./resources/docker/start_nommon_base_py3.sh -d` 
+to delete the existing container)
 
 Within the docker container use the following command to run the tests:
 
