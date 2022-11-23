@@ -13,6 +13,8 @@ For creating and running a docker container:
 
 `./resources/docker/start_nommon_base_py3.sh -r`
 
+(Note: If the container already exists, use: `./resources/docker/start_nommon_base_py3.sh -d`)
+
 Within the docker container use the following command to run the tests:
 
 `pytest tests/tests_code/nommon_pizza`
