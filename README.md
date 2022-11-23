@@ -5,7 +5,7 @@
 In this exercise you will practise running tests within a docker and debugging code.  
 We will use the nommon-base-py3 image for running this Python3 code. 
 
-For creating the image, open the pycharm terminal and use the command.
+If the image doesn't exist. Open the pycharm terminal and use the command.
 
 `./resources/docker/start_nommon_base_py3.sh -i`
 
