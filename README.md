@@ -28,8 +28,6 @@ Open a Jupyter Lab inside the docker and debug the code to fix the issues.
 For opening a jupyter lab, use the command `jl` within the docker terminal.  
 You ~~should~~ **MUST** use the debug tool of jupyter lab.
 
-
-
 **_The only code that needs to be changed is the function that gives the error._**
 
 
