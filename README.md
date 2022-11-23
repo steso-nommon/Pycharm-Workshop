@@ -11,10 +11,11 @@ If the image doesn't exist. Open the pycharm terminal and use the command.
 
 For creating and running a docker container:
 
-`./resources/docker/start_nommon_base_py3.sh -r`
-
 (Note: If the container already exists, use: `./resources/docker/start_nommon_base_py3.sh -d` 
 to delete the existing container)
+
+`./resources/docker/start_nommon_base_py3.sh -r`
+
 
 Within the docker container use the following command to run the tests:
 
@@ -23,6 +24,8 @@ Within the docker container use the following command to run the tests:
 **The tests are failing!**
 
 Open a Jupyter Lab inside the docker and debug the code to fix the issues.
+
+The only code that needs to be changed is the function that fives the error.
 
 
 ![](https://i0.wp.com/blog.cambro.com/wp-content/uploads/2021/10/PizzaQuiz.png?ssl=1)
