@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
- Module description: papapa
+ Module description: papapaa
 """
 
 __author__ = 'steso'
