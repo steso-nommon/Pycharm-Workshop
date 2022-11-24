@@ -38,6 +38,6 @@ class Shop:
         for employee in self.employees:
             employee.salary *= salary_adjust_percentage
 
-        self.product_owner.salary /= self.product_owner.salary
+        self.product_owner.salary /= salary_adjust_percentage
 
         return "OK"
