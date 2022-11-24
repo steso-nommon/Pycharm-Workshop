@@ -11,10 +11,22 @@ If the image doesn't exist. Open the pycharm terminal and use the command.
 
 For creating and running a docker container:
 
-(Note: If the container already exists, use: `./resources/docker/start_nommon_base_py3.sh -d` 
-to delete the existing container)
-
 `./resources/docker/start_nommon_base_py3.sh -r`
+
+---
+If there are errors because the container already exists:
+
+Option 1:
+ * Start the stopped container: `./resources/docker/start_nommon_base_py3.sh`
+
+Option 2:
+ * Delete the stopped container: `./resources/docker/start_nommon_base_py3.sh -d`
+ * Create a new container: `./resources/docker/start_nommon_base_py3.sh -r`
+
+It is recommended to delete and create again the container for this exercise 
+if you encounter this problem. 
+
+---
 
 
 Within the docker container use the following command to run the tests:
@@ -27,6 +39,31 @@ Open a Jupyter Lab inside the docker and debug the code to fix the issues.
 
 For opening a jupyter lab, use the command `jl` within the docker terminal.  
 You ~~should~~ **MUST** use the debug tool of jupyter lab.
+
+---
+
+### How to debug
+
+For starting debugging mode in JupyterLab press the debug button.
+
+![](images/debug_jl_btn.png)
+
+Now you can put a breakpoint in the function to test
+
+![](images/breakpoint.png)
+
+At the right of the screen you can see the usual debug functions.
+Shortcuts:
+ * `F10` To go to the next sentence
+ * `F11` To step inside the function
+
+![](images/variable_and_use.png)
+
+Clicking the file path in the source tab will maximize the file that is debugged.
+
+![](images/debug_file.png)
+
+---
 
 **_The only code that needs to be changed is the function that gives the error._**
 
