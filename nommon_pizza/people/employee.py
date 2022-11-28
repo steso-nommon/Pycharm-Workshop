@@ -17,5 +17,5 @@ class Employee(Person):
         super().__init__(name)
         self.salary = salary
 
-    def create_pizza(self, pizza_design, price, status):
-        return Pizza(pizza_design, price, status)
+    def create_pizza(self, pizza_design, status):
+        return Pizza(pizza_design, status)
