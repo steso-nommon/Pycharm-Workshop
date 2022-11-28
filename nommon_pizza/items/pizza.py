@@ -14,8 +14,9 @@ class Pizza:
     PIZZA_STATUS_HOT = "hot"
     PIZZA_STATUS_COLD = "cold"
 
-    def __init__(self, pizza_design: PizzaDesign, status: str):
+    def __init__(self, pizza_design: PizzaDesign, price, status: str):
         self.pizza_design = pizza_design
+        self.price = price
         if status != Pizza.PIZZA_STATUS_COLD and status != Pizza.PIZZA_STATUS_HOT:
             raise ValueError("Pizza cannot be in that status.")
         self.status = status
