@@ -7,15 +7,14 @@
 __author__ = 'steso'
 __copyright__ = '(c) Nommon 2022'
 
+from nommon_pizza.items.pizza_design import PizzaDesign
 from nommon_pizza.people.employee import Employee
 
 
 class ProductOwner(Employee):
 
-    def __init__(self, name: str, salary: int, pizza: str, price: int):
+    def __init__(self, name: str, salary: int):
         super().__init__(name, salary)
-        self.pizza = pizza
-        self.price = price
 
-    def design_pizza(self, shop):
-        return shop.create_pizza_design(self.pizza, self.price)
+    def design_pizza(self, pizza_name, ingredients):
+        return PizzaDesign(pizza_name, ingredients)

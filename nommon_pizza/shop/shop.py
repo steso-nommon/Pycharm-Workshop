@@ -16,20 +16,20 @@ class Shop:
     def __init__(self, employees, product_owner):
         self.employees = employees
         self.product_owner = product_owner
-        self.pizzas = dict()
+        self.pizza_designs = dict()
         self.inventory = dict()
 
     @staticmethod
     def create_shop():
         pepe = Employee("Pepe", 20000)
         juana = Employee("Juana", 22000)
-        eustaquia = ProductOwner("Eustaquia", 30000, "Hawaiana", 10)
 
         employees = {"Juana": juana,
                      "Pepe": pepe}
+        eustaquia = ProductOwner("Eustaquia", 30000)
         product_owner = eustaquia
 
         return Shop(employees, product_owner)
 
-    def create_pizza_design(self, pizza, price):
-        self.pizzas[pizza] = price
+    def add_pizza_design(self, pizza_design, price):
+        self.pizza_designs[pizza_design] = price
