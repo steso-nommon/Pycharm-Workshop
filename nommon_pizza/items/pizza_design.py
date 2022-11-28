@@ -10,7 +10,8 @@ __copyright__ = '(c) Nommon 2022'
 
 class PizzaDesign:
 
-    def __init__(self, pizza_name, ingredients):
+    def __init__(self, pizza_name, ingredients, price):
         self.pizza_name = pizza_name
         self.ingredients = ingredients
+        self.price = price
 

@@ -16,5 +16,5 @@ class ProductOwner(Employee):
     def __init__(self, name: str, salary: int):
         super().__init__(name, salary)
 
-    def design_pizza(self, pizza_name, ingredients):
-        return PizzaDesign(pizza_name, ingredients)
+    def design_pizza(self, pizza_name, ingredients, price):
+        return PizzaDesign(pizza_name, ingredients, price)
